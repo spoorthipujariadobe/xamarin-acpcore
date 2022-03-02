@@ -55,6 +55,21 @@
   <ItemGroup>
     <PackageReference Include="Xamarin.Forms" Version="4.6.0.800" />
     <PackageReference Include="Xamarin.Essentials" Version="1.5.3.2" />
+    <PackageReference Include="Adobe.ACPIdentity.Android">
+      <Version>1.1.0</Version>
+    </PackageReference>
+    <PackageReference Include="Adobe.ACPLifecycle.Android">
+      <Version>1.1.0</Version>
+    </PackageReference>
+    <PackageReference Include="Adobe.ACPCore.Android">
+      <Version>1.1.0</Version>
+    </PackageReference>
+    <PackageReference Include="Adobe.ACPCoreBridge.Android">
+      <Version>0.0.1</Version>
+    </PackageReference>
+    <PackageReference Include="Adobe.ACPSignal.Android">
+      <Version>1.0.1</Version>
+    </PackageReference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="MainActivity.cs" />
@@ -93,22 +108,6 @@
     <ProjectReference Include="..\ACPCoreTestApp\ACPCoreTestApp.csproj">
       <Project>{67520923-6DBA-4406-8C34-8D40B814D16C}</Project>
       <Name>ACPCoreTestApp</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Adobe.ACPCore.Android\Adobe.ACPCore.Android.csproj">
-      <Project>{782A7AF5-693F-4FF1-AA88-9AF838CE9E51}</Project>
-      <Name>Adobe.ACPCore.Android</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Adobe.ACPIdentity.Android\Adobe.ACPIdentity.Android.csproj">
-      <Project>{913C9259-779D-4CC5-B6EB-3B5CDD4EB17A}</Project>
-      <Name>Adobe.ACPIdentity.Android</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Adobe.ACPLifecycle.Android\Adobe.ACPLifecycle.Android.csproj">
-      <Project>{A43A9090-B843-42A3-AF83-C3E67CD47C55}</Project>
-      <Name>Adobe.ACPLifecycle.Android</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Adobe.ACPSignal.Android\Adobe.ACPSignal.Android.csproj">
-      <Project>{51C286CB-0E5D-473A-B94F-9F65B08153F7}</Project>
-      <Name>Adobe.ACPSignal.Android</Name>
     </ProjectReference>
   </ItemGroup>
  <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
